@@ -1,0 +1,23 @@
+<div class="cover" (click)="Toggle()"></div>
+<div class="menuBar">
+  <div class="UserInfo">
+      <div class='UserAvatar' (mouseover)="showEdit = true" (mouseleave) ="showEdit = false" >
+        <mat-icon class="editIcon" *ngIf="showEdit" >edit</mat-icon>
+      </div>
+      <p>Rem Titor</p>
+    </div>
+
+
+  <div class="menuBarItems" (click)="Toggle()">
+    <a href="#" class="menuBarItem">News</a>
+    <a href="#" class="menuBarItem">News Creator</a>
+    <a [routerLink]="[{ outlets: { menuOutlet: ['messages'] } }]" class="menuBarItem">Messages</a>
+    <a [routerLink]="[{ outlets: { menuOutlet: ['friends'] } }]" class="menuBarItem">Friends</a>
+    <a href="#" class="menuBarItem">Stored Files</a>
+  </div>
+</div>
+
+
+<img src="tvoy ssaniy url" >
+
+

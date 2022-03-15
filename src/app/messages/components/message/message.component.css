@@ -1,0 +1,36 @@
+.inputMessage {
+  position: relative;
+  height: auto;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.inputMessage .message {
+  border-radius: 10px;
+  background-color: #0f0e0e;
+  color: white;
+  width: auto;
+  height: auto;
+  margin-right: 60%;
+  padding: 10px;
+  align-content: center;
+}
+
+.outputMessage {
+  position: relative;
+  height: auto;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.outputMessage .message {
+  background-color: #2c2c2c;
+  width: auto;
+  height: auto;
+  margin-left: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}

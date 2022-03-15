@@ -1,0 +1,17 @@
+.friendList{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width:auto;
+}
+
+.columnList{
+  margin-top: 0.5em;
+  flex-direction: column;
+  width: auto;
+  height: 77vh;
+}
+
+.columnList::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}

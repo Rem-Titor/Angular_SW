@@ -1,0 +1,18 @@
+.messages{
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 100%;
+}
+
+.dialoglist{
+  height: auto;
+  width: 25%;
+}
+
+.dialog{
+  flex-direction: column;
+  margin-left: 2em;
+  height: 82vh;
+  width: 75%;
+}

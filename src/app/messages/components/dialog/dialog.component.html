@@ -1,0 +1,21 @@
+<div class="dialogInner">
+
+
+  <cdk-virtual-scroll-viewport appendOnly itemSize="50" class="dialogMessages">
+    <div *cdkVirtualFor="let item of items">
+      <app-message [type]="'inputMessage'"></app-message>
+    </div>
+  </cdk-virtual-scroll-viewport>
+
+
+
+  <div class="send">
+      <input type="text" class="input" >
+    <div class="submit">
+      <button type="submit">
+        <mat-icon>send</mat-icon>
+      </button>
+    </div>
+  </div>
+
+</div>

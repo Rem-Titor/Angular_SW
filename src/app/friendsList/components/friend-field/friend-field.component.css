@@ -1,0 +1,97 @@
+.userPromo {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: self-start;
+  width: auto;
+  height: auto;
+  border-radius: 0.5em;
+  background-color: #444444;
+  padding: 1em;
+}
+
+.userShortInfo {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1em;
+}
+
+.userAvatar {
+  height: 3em;
+  width: 3em;
+  border: 5px solid white;
+  border-radius: 50%;
+  background: white;
+}
+
+.userName p {
+  width: 100%;
+  color: white;
+  font-size: 1.5em;
+  padding: 1em;
+
+}
+
+.userFullInfo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.FullInfo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.FullInfo.Left {
+  flex-grow: 2;
+}
+
+.FullInfo.Right {
+  flex-grow: 2;
+}
+
+
+.FullInfoButton {
+  height: 3em;
+  background-color: #272420;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+.FullInfoButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.FullInfoButton.Right {
+  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.FullInfoButton.Left {
+  border-bottom-left-radius: 1em;
+  border-top-left-radius: 1em;
+}
+
+.FullInfoButton.RightTop {
+  border-top-right-radius: 1em;
+}
+
+.FullInfoButton.LeftTop {
+  border-top-left-radius: 1em;
+}
+
+
+.userPromo:hover {
+ background-color: #0a0a0a;
+}
+
+.FullInfoBottom {
+  padding: 0.5em;
+  background-color: #272420;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em ;
+}

@@ -1,0 +1,39 @@
+.userPromo{
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 0.5em;
+  height: 5em;
+  padding: 5px 5px 5px 0px;
+  border-radius: 10px;
+  background-color: #0f0e0e;
+
+
+}
+
+.userAvatar{
+  display:inline-block;
+  margin: 10px;
+  height: 60%;
+  width: auto;
+  border: 5px solid white;
+  border-radius: 50%;
+  background: white;
+}
+
+.userName{
+  display: inline-block;
+  margin: 10px;
+  height: 40px;
+  width: auto;
+  color: white;
+}
+
+p{
+  margin: 10px;
+  font-size: 20px;
+}
+
+.userPromo:hover{
+  transform: scale(1.02);
+}

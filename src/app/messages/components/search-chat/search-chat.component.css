@@ -1,0 +1,49 @@
+.search {
+  width: 100%;
+  padding: 5px 5px 5px 0px;
+  border-radius: 3px;
+  background: #fff;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.search .input input {
+  border: none;
+  font-size: 1.5em;
+  transition: width 200ms;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  height: auto;
+  color: black;
+  margin-left: 15px;
+}
+
+.search .submit button {
+  border: 4px solid transparent;
+  background-color: transparent;
+  color: black !important;
+}
+
+.search .submit button mat-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search .submit button:hover {
+  transform: scale(1.2);
+}
+
+.search .input input:hover, .search .submit button:hover {
+  cursor: pointer;
+}
+
+.search .input input:focus {
+  outline: none;
+  border-bottom: 1px solid gray;
+}
+
+

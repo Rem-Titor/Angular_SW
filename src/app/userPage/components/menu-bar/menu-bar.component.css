@@ -1,0 +1,80 @@
+.cover{
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.menuBar{
+  position: fixed;
+  display: flex ;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 25em;
+  height: 100%;
+  border-radius: 10px;
+  background:#0a0a0a;
+  z-index: 2;
+}
+
+.menuBarItems{
+  display: flex ;
+  flex-direction: column;
+}
+
+.menuBarItem{
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px;
+  padding: 15px;
+}
+
+
+.UserInfo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1em;
+  border: 3px solid white;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+
+.UserAvatar{
+  border-radius: 50%;
+  width:100px;
+  height:100px;
+  background-image:url("avatars.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.editIcon{
+  position: relative;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%) scale(1.5);
+  z-index: 2;
+  color: white;
+}
+
+.UserInfo p{
+  font-size: 2em;
+  color: white;
+  margin-left: 1em;
+}
+
+
+.menuBarItem:hover{
+  background:rgba(255,255,255,.25) !important;
+}

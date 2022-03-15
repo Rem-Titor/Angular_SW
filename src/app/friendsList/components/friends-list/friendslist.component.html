@@ -1,0 +1,12 @@
+<div class="friendList">
+  <app-search-friend></app-search-friend>
+
+
+
+  <cdk-virtual-scroll-viewport appendOnly itemSize="50" class="columnList">
+    <div *cdkVirtualFor="let item of items">
+      <app-friend-field></app-friend-field>
+    </div>
+  </cdk-virtual-scroll-viewport>
+
+</div>

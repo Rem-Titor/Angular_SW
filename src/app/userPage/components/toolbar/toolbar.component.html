@@ -1,0 +1,12 @@
+<mat-toolbar class="toolbar">
+  <button mat-icon-button (click)="showmenu = !showmenu"> <mat-icon>menu</mat-icon> </button>
+  <span>SocialWeb</span>
+  <span class="spacer"></span>
+  <app-search-field></app-search-field>
+  <span class="spacer2"></span>
+  <button mat-mini-fab>
+    <mat-icon>settings</mat-icon>
+  </button>
+</mat-toolbar>
+
+<app-menu-bar *ngIf="showmenu" (onClick)="showmenu=$event"  ></app-menu-bar>

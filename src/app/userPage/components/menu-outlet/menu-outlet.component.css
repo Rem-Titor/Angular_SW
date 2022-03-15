@@ -1,0 +1,7 @@
+.menuOutlet{
+  border: 3px solid white;
+  border-radius: 2px;
+  padding: 10px;
+  background:transparent;
+  height: 100%;
+}

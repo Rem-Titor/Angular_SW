@@ -1,0 +1,72 @@
+<!--<div class="loginContainer">-->
+<!--  <form class="card" [formGroup]="form" (ngSubmit)="submit()">-->
+<!--    <div class="form-control">-->
+<!--      <input type="text" placeholder="email" formControlName="email" id="email">-->
+<!--    </div>-->
+
+<!--    <div-->
+<!--    *ngIf="form.get('email')?.invalid && form.get('email')?.touched"-->
+<!--    class="validators"-->
+<!--    >-->
+<!--      <small *ngIf="form.get('email')?.errors?.['required']">Email required</small>-->
+<!--    </div>-->
+
+<!--    <div class="form-control">-->
+<!--      <input type="password" placeholder="password" formControlName="password">-->
+<!--    </div>-->
+
+<!--    <div-->
+<!--    *ngIf="form.get('password')?.invalid && form.get('password')?.touched"-->
+<!--    class="validators"-->
+<!--    >-->
+<!--      <small *ngIf="form.get('password')?.errors?.['required']">Password required</small>-->
+<!--    </div>-->
+<!--    <button class="btn" type="submit" [disabled]="form.invalid">Login</button>-->
+<!--  </form>-->
+<!--</div>-->
+
+<mat-card>
+  <mat-card-title>Login</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+
+
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input type="text" matInput placeholder="Email" formControlName="email">
+        </mat-form-field>
+
+
+
+
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" formControlName="password">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+
+
+      <div
+        *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
+        class="error"
+      >
+        <p *ngIf="form.get('email')?.errors?.['required']">Email required</p>
+      </div>
+
+      <div
+            *ngIf="form.get('password')?.invalid && form.get('password')?.touched"
+            class="error"
+            >
+              <p *ngIf="form.get('password')?.errors?.['required']">Password required</p>
+            </div>
+
+      <div class="button">
+        <button type="submit" mat-button>Login</button>
+      </div>
+
+    </form>
+  </mat-card-content>
+</mat-card>
+

@@ -1,0 +1,10 @@
+<div class="loginPage">
+  <div class="entranceButtons">
+    <button mat-button [routerLink] = "[{ outlets: { loginPage: ['login'] } }]">Login</button>
+    <button mat-button [routerLink] = "[{ outlets: { loginPage: ['register'] } }]">Register</button>
+  </div>
+  <div class="loginOutlet">
+    <router-outlet name="loginPage"></router-outlet>
+  </div>
+
+</div>

@@ -1,0 +1,24 @@
+.menuoutletset{
+  position: fixed;
+  margin-top: 6em;
+  margin-left: 1.3em;
+  width:75%;
+  height: 84vh;
+}
+
+.reminderset{
+  position: fixed;
+  top:6em;
+  left: 77%;
+  width: 90%;
+  height: auto;
+}
+
+.toolbarset{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+}
+
+

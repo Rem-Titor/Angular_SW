@@ -1,0 +1,8 @@
+.dialogListInner{
+  flex-direction: column;
+}
+
+.dialogListInner.chats{
+  flex-direction: column;
+}
+

@@ -1,0 +1,39 @@
+<div class="userPromo">
+  <div *ngIf="!friendList && !postCreated && !postTags" class="userShortInfo">
+
+    <div class="userAvatar">
+      <img src="https://cdn-icons-png.flaticon.com/512/1/1247.png" width="40" height="40">
+    </div>
+
+    <div class="userName">
+      <p>Rem Titor</p>
+    </div>
+
+  </div>
+
+  <div class="userFullInfo">
+
+    <div class="FullInfo Left">
+      <button [ngClass]="!friendList? 'FullInfoButton Left':'FullInfoButton LeftTop' " (click)="Selector('friendList')"> Friends: 1234</button>
+      <div class="FullInfoBottom" *ngIf="friendList">
+        <app-friends-list></app-friends-list>
+      </div>
+    </div>
+
+    <div class="FullInfo">
+      <button class="FullInfoButton" (click)="Selector('postTags')"> #Post Tags</button>
+      <div class="FullInfoBottom " *ngIf="postTags">
+        <app-friends-list></app-friends-list>
+      </div>
+    </div>
+
+    <div class="FullInfo Right">
+      <button [ngClass]="!postCreated? 'FullInfoButton Right':'FullInfoButton RightTop' "   (click)="Selector('postCreated')">Post Created</button>
+      <div class="FullInfoBottom " *ngIf="postCreated">
+        <app-friends-list></app-friends-list>
+      </div>
+    </div>
+
+  </div>
+
+</div>
